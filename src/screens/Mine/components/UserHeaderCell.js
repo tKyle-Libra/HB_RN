@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Image,Button,TouchableOpacity,View, StyleSheet,ImageBackground,Text} from 'react-native';
 
+const Dimensions = require('Dimensions');
+const width = Dimensions.get('window').width; 
 export default class UserHeaderCell extends Component{
     render(){
         return(
-            <ImageBackground style={styles.bgImage} source={require('../../../assets/images/headerBG.png')}>
+            <ImageBackground style={[styles.bgImage,{width:width}]} source={require('../../../assets/images/headerBG.png')}>
                 <Image source={require('../../../assets/images/shadow.png')} style={{height:40}}/>
                 <View style={styles.navigationBar}>
                     <TouchableOpacity style={styles.navigationBtn}  title='123' onPress={()=>alert('setting')}>

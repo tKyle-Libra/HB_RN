@@ -7,26 +7,28 @@ export default class NyOrderCell extends Component{
         return(
             <View style={styles.cell}>
                 <View style={styles.containerView}>
-                    <View style={styles.titleView}>
-                        <Text style={styles.title}>{'我的订单'}</Text>
-                    </View>
-                    <View style={styles.desView}>
-                        <Text style={styles.des}>{'查看更多订单'}</Text>
-                        <Image style={styles.into} source={require('../../../assets/images/white_into.png')}/>
-                    </View>
+                    <TouchableOpacity style={{flexDirection:'row',justifyContent:'flex-start',alignItems: 'center'}}>
+                        <View style={styles.titleView}>
+                            <Text style={styles.title}>{'我的订单'}</Text>
+                        </View>
+                        <View style={styles.desView}>
+                            <Text style={styles.des}>{'查看更多订单'}</Text>
+                            <Image style={styles.into} source={require('../../../assets/images/white_into.png')}/>
+                        </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.line}></View>
                 <View style={styles.functionView}>
-                    <ImageButton    title='待付款' url={require('../../../assets/images/Group17Copy.png')} 
+                    <ImageButton    title='待付款' url={require('../../../assets/images/Group17.png')} 
                                     imageStyle={{width:25,height:19}} titleStyle={styles.btnTitle} 
                                     btnStyle={{flex:4}}/>
-                    <ImageButton    title='待赴约' url={require('../../../assets/images/Group10Copy.png')} 
+                    <ImageButton    title='待赴约' url={require('../../../assets/images/Group10.png')} 
                                     imageStyle={{width:24,height:22}} titleStyle={styles.btnTitle} 
                                     btnStyle={{flex:4}}/>
-                    <ImageButton    title='待评价' url={require('../../../assets/images/newscopy.png')} 
+                    <ImageButton    title='待评价' url={require('../../../assets/images/news.png')} 
                                     imageStyle={{width:21,height:21}} titleStyle={styles.btnTitle} 
                                     btnStyle={{flex:4}}/>
-                    <ImageButton    title='退款/取消' url={require('../../../assets/images/rotatecopy.png')} 
+                    <ImageButton    title='退款/取消' url={require('../../../assets/images/rotate.png')} 
                                     imageStyle={{width:23,height:23}} titleStyle={styles.btnTitle} 
                                     btnStyle={{flex:4}}/>
                 </View> 
