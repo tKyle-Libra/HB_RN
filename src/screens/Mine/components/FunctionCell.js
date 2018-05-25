@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { View,StyleSheet,Text,TouchableOpacity,Image } from 'react-native';
+import ImageButton from '../../Component/ImageButton'
 
 const Dimensions = require('Dimensions');  
 const width = Dimensions.get('window').width;  
 const btnWidth = (width-60)/4;
-console.log('width'+'-'+width);
-console.log('btnWidth'+'-'+btnWidth);
+
 export default class FunctionCell extends Component{
     render(){
         return(
@@ -15,38 +15,30 @@ export default class FunctionCell extends Component{
                 </View>
                 <View style={styles.line}/>
                 <View style={styles.functionView}>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/yuyueguahao.png')} style={{width:25,height:25}}/>
-                        <Text style={styles.btnTitle}>{'预约挂号'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/yuesao.png')} style={{width:21,height:25}}/>
-                        <Text style={styles.btnTitle}>{'就医陪诊'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/peihu.png')} style={{width:27,height:24}}/>
-                        <Text style={styles.btnTitle}>{'住院陪护'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/home_peihucopy.png')} style={{width:27,height:24}}/>
-                        <Text style={styles.btnTitle}>{'居家陪护'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/Shape.png')} style={{width:15,height:25}}/>
-                        <Text style={styles.btnTitle}>{'专家讲座'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/咖啡.png')} style={{width:24,height:25}}/>
-                        <Text style={styles.btnTitle}>{'健康沙龙'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/zixunguanli.png')} style={{width:25,height:23}}/>
-                        <Text style={styles.btnTitle}>{'在线咨询'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,styles.btn]}>
-                        <Image source={require('../../../assets/images/挂号.png')} style={{width:21,height:24}}/>
-                        <Text style={styles.btnTitle}>{'预约加号'}</Text>
-                    </TouchableOpacity>
+                    <ImageButton    title='预约挂号' url={require('../../../assets/images/yuyueguahao.png')} 
+                                    imageStyle={{width:25,height:25}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='就医陪诊' url={require('../../../assets/images/yuesao.png')} 
+                                    imageStyle={{width:21,height:25}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>             
+                    <ImageButton    title='住院陪护' url={require('../../../assets/images/peihu.png')} 
+                                    imageStyle={{width:27,height:24}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='居家陪护' url={require('../../../assets/images/home_peihucopy.png')} 
+                                    imageStyle={{width:27,height:24}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='专家讲座' url={require('../../../assets/images/Shape.png')} 
+                                    imageStyle={{width:15,height:25}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='健康沙龙' url={require('../../../assets/images/咖啡.png')} 
+                                    imageStyle={{width:24,height:25}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='在线咨询' url={require('../../../assets/images/zixunguanli.png')} 
+                                    imageStyle={{width:25,height:23}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
+                    <ImageButton    title='预约加号' url={require('../../../assets/images/挂号.png')} 
+                                    imageStyle={{width:21,height:24}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{width:btnWidth,height:77,}}/>
                 </View>
             </View>
         )

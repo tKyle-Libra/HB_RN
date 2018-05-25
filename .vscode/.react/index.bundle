@@ -78698,6 +78698,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _FunctionCell2 = _interopRequireDefault(_FunctionCell);
 
+    var _SystemCell = _require(_dependencyMap[6], "./components/SystemCell");
+
+    var _SystemCell2 = _interopRequireDefault(_SystemCell);
+
+    var _Logo = _require(_dependencyMap[7], "../Component/Logo");
+
+    var _Logo2 = _interopRequireDefault(_Logo);
+
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
     function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -78738,6 +78746,18 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 return item.cell;
             };
 
+            _this._footItem = function () {
+                return _react3.default.createElement(_Logo2.default, {
+                    style: {
+                        height: 82
+                    },
+                    __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 28
+                    }
+                });
+            };
+
             _this.state = {
                 sourceData: [{
                     cell: _react3.default.createElement(_UserHeaderCell2.default, {
@@ -78746,7 +78766,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         },
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 11
+                            lineNumber: 13
                         }
                     })
                 }, {
@@ -78756,7 +78776,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         },
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 12
+                            lineNumber: 14
                         }
                     })
                 }, {
@@ -78766,7 +78786,17 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         },
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 13
+                            lineNumber: 15
+                        }
+                    })
+                }, {
+                    cell: _react3.default.createElement(_SystemCell2.default, {
+                        style: {
+                            height: 105
+                        },
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 16
                         }
                     })
                 }]
@@ -78783,9 +78813,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     keyExtractor: function keyExtractor(item, index) {
                         return index.toString();
                     },
+                    ListFooterComponent: this._footItem,
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 25
+                        lineNumber: 34
                     }
                 });
             }
@@ -78795,7 +78826,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }(_react2.Component));
 
     exports.default = Mine;
-},603,[118,130,12,604,610,616],"src/screens/Mine/index.js");
+},603,[118,130,12,604,610,616,632,633],"src/screens/Mine/index.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -79294,6 +79325,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _reactNative = _require(_dependencyMap[2], "react-native");
 
+    var _ImageButton = _require(_dependencyMap[3], "../../Component/ImageButton");
+
+    var _ImageButton2 = _interopRequireDefault(_ImageButton);
+
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
     function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -79339,7 +79374,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         style: styles.cell,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 7
+                            lineNumber: 8
                         }
                     },
                     _react3.default.createElement(
@@ -79348,7 +79383,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                             style: styles.containerView,
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 8
+                                lineNumber: 9
                             }
                         },
                         _react3.default.createElement(
@@ -79357,7 +79392,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                                 style: styles.titleView,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 9
+                                    lineNumber: 10
                                 }
                             },
                             _react3.default.createElement(
@@ -79366,7 +79401,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                                     style: styles.title,
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 10
+                                        lineNumber: 11
                                     }
                                 },
                                 '我的订单'
@@ -79378,7 +79413,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                                 style: styles.desView,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 12
+                                    lineNumber: 13
                                 }
                             },
                             _react3.default.createElement(
@@ -79387,17 +79422,17 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                                     style: styles.des,
                                     __source: {
                                         fileName: _jsxFileName,
-                                        lineNumber: 13
+                                        lineNumber: 14
                                     }
                                 },
                                 '查看更多订单'
                             ),
                             _react3.default.createElement(_reactNative.Image, {
                                 style: styles.into,
-                                source: _require(_dependencyMap[3], '../../../assets/images/white_into.png'),
+                                source: _require(_dependencyMap[4], '../../../assets/images/white_into.png'),
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 14
+                                    lineNumber: 15
                                 }
                             })
                         )
@@ -79406,7 +79441,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         style: styles.line,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 17
+                            lineNumber: 18
                         }
                     }),
                     _react3.default.createElement(
@@ -79415,145 +79450,73 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                             style: styles.functionView,
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 18
+                                lineNumber: 19
                             }
                         },
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, {
-                                    flex: 4
-                                }],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 19
-                                }
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5F85\u4ED8\u6B3E",
+                            url: _require(_dependencyMap[5], '../../../assets/images/Group17Copy.png'),
+                            imageStyle: {
+                                width: 25,
+                                height: 19
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[4], '../../../assets/images/Group17Copy.png'),
-                                style: {
-                                    width: 25,
-                                    height: 19
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 20
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 21
-                                    }
-                                },
-                                '待付款'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, {
-                                    flex: 4
-                                }],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 23
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                flex: 4
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[5], '../../../assets/images/Group10Copy.png'),
-                                style: {
-                                    width: 24,
-                                    height: 22
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 24
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 25
-                                    }
-                                },
-                                '待赴约'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, {
-                                    flex: 4
-                                }],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 27
-                                }
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 20
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5F85\u8D74\u7EA6",
+                            url: _require(_dependencyMap[6], '../../../assets/images/Group10Copy.png'),
+                            imageStyle: {
+                                width: 24,
+                                height: 22
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[6], '../../../assets/images/newscopy.png'),
-                                style: {
-                                    width: 21,
-                                    height: 21
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 28
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 29
-                                    }
-                                },
-                                '待评价'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, {
-                                    flex: 4
-                                }],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 31
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                flex: 4
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[7], '../../../assets/images/rotatecopy.png'),
-                                style: {
-                                    width: 23,
-                                    height: 23
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 32
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 33
-                                    }
-                                },
-                                '退款/取消'
-                            )
-                        )
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 23
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5F85\u8BC4\u4EF7",
+                            url: _require(_dependencyMap[7], '../../../assets/images/newscopy.png'),
+                            imageStyle: {
+                                width: 21,
+                                height: 21
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                flex: 4
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 26
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u9000\u6B3E/\u53D6\u6D88",
+                            url: _require(_dependencyMap[8], '../../../assets/images/rotatecopy.png'),
+                            imageStyle: {
+                                width: 23,
+                                height: 23
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                flex: 4
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 29
+                            }
+                        })
                     )
                 );
             }
@@ -79634,7 +79597,105 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             color: '#666666'
         }
     });
-},610,[118,130,12,611,612,613,614,615],"src/screens/Mine/components/MyOrderCell.js");
+},610,[118,130,12,635,611,612,613,614,615],"src/screens/Mine/components/MyOrderCell.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _react2 = _require(_dependencyMap[0], "react");
+
+    var _react3 = _interopRequireDefault(_react2);
+
+    var _index = _require(_dependencyMap[1], "./../../../node_modules/react-transform-hmr/lib/index.js");
+
+    var _index2 = _interopRequireDefault(_index);
+
+    var _jsxFileName = "/Users/letong/Desktop/RN/HB_RN/src/screens/Component/ImageButton.js";
+
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+    var _reactNative = _require(_dependencyMap[2], "react-native");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    var _components = {
+        ImageButton: {
+            displayName: "ImageButton"
+        }
+    };
+
+    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+        filename: "/Users/letong/Desktop/RN/HB_RN/src/screens/Component/ImageButton.js",
+        components: _components,
+        locals: [module],
+        imports: [_react3.default]
+    });
+
+    function _wrapComponent(id) {
+        return function (Component) {
+            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+        };
+    }
+
+    var ImageButton = _wrapComponent("ImageButton")(function (_Component) {
+        _inherits(ImageButton, _Component);
+
+        function ImageButton(props) {
+            _classCallCheck(this, ImageButton);
+
+            return _possibleConstructorReturn(this, (ImageButton.__proto__ || Object.getPrototypeOf(ImageButton)).call(this, props));
+        }
+
+        _createClass(ImageButton, [{
+            key: "render",
+            value: function render() {
+                return _react3.default.createElement(
+                    _reactNative.TouchableOpacity,
+                    {
+                        style: [{
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }, this.props.btnStyle],
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 10
+                        }
+                    },
+                    _react3.default.createElement(_reactNative.Image, {
+                        source: this.props.url,
+                        style: this.props.imageStyle,
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 11
+                        }
+                    }),
+                    _react3.default.createElement(
+                        _reactNative.Text,
+                        {
+                            style: this.props.titleStyle,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 12
+                            }
+                        },
+                        this.props.title
+                    )
+                );
+            }
+        }]);
+
+        return ImageButton;
+    }(_react2.Component));
+
+    exports.default = ImageButton;
+},635,[118,130,12],"src/screens/Component/ImageButton.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -79660,42 +79721,6 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 },612,[326],"src/assets/images/Group17Copy@2x.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
-  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
-    "__packager_asset": true,
-    "httpServerLocation": "/assets/src/assets/images",
-    "width": 24,
-    "height": 21.5,
-    "scales": [2, 3],
-    "hash": "c0c617b1057118fa974ebb754b0c5bef",
-    "name": "Group10Copy",
-    "type": "png"
-  });
-},613,[326],"src/assets/images/Group10Copy@2x.png");
-__d(function (global, _require, module, exports, _dependencyMap) {
-  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
-    "__packager_asset": true,
-    "httpServerLocation": "/assets/src/assets/images",
-    "width": 21,
-    "height": 20.5,
-    "scales": [2, 3],
-    "hash": "08bc9b5b2b06da33efda9fa518d44c2e",
-    "name": "newscopy",
-    "type": "png"
-  });
-},614,[326],"src/assets/images/newscopy@2x.png");
-__d(function (global, _require, module, exports, _dependencyMap) {
-  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
-    "__packager_asset": true,
-    "httpServerLocation": "/assets/src/assets/images",
-    "width": 23,
-    "height": 23,
-    "scales": [2, 3],
-    "hash": "43de8993567eb735e6be3dad00e4f347",
-    "name": "rotatecopy",
-    "type": "png"
-  });
-},615,[326],"src/assets/images/rotatecopy@2x.png");
-__d(function (global, _require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
     });
@@ -79713,6 +79738,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
     var _reactNative = _require(_dependencyMap[2], "react-native");
+
+    var _ImageButton = _require(_dependencyMap[3], "../../Component/ImageButton");
+
+    var _ImageButton2 = _interopRequireDefault(_ImageButton);
 
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79741,7 +79770,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         };
     }
 
-    var Dimensions = _require(_dependencyMap[3], 'Dimensions');
+    var Dimensions = _require(_dependencyMap[4], 'Dimensions');
 
     var width = Dimensions.get('window').width;
     var btnWidth = (width - 60) / 4;
@@ -79806,262 +79835,142 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                                 lineNumber: 17
                             }
                         },
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 18
-                                }
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u9884\u7EA6\u6302\u53F7",
+                            url: _require(_dependencyMap[5], '../../../assets/images/yuyueguahao.png'),
+                            imageStyle: {
+                                width: 25,
+                                height: 25
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[4], '../../../assets/images/yuyueguahao.png'),
-                                style: {
-                                    width: 25,
-                                    height: 25
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 19
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 20
-                                    }
-                                },
-                                '预约挂号'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 22
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[5], '../../../assets/images/yuesao.png'),
-                                style: {
-                                    width: 21,
-                                    height: 25
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 23
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 24
-                                    }
-                                },
-                                '就医陪诊'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 26
-                                }
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 18
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5C31\u533B\u966A\u8BCA",
+                            url: _require(_dependencyMap[6], '../../../assets/images/yuesao.png'),
+                            imageStyle: {
+                                width: 21,
+                                height: 25
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[6], '../../../assets/images/peihu.png'),
-                                style: {
-                                    width: 27,
-                                    height: 24
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 27
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 28
-                                    }
-                                },
-                                '住院陪护'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 30
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[7], '../../../assets/images/home_peihucopy.png'),
-                                style: {
-                                    width: 27,
-                                    height: 24
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 31
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 32
-                                    }
-                                },
-                                '居家陪护'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 34
-                                }
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 21
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u4F4F\u9662\u966A\u62A4",
+                            url: _require(_dependencyMap[7], '../../../assets/images/peihu.png'),
+                            imageStyle: {
+                                width: 27,
+                                height: 24
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[8], '../../../assets/images/Shape.png'),
-                                style: {
-                                    width: 15,
-                                    height: 25
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 35
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 36
-                                    }
-                                },
-                                '专家讲座'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 38
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[9], '../../../assets/images/咖啡.png'),
-                                style: {
-                                    width: 24,
-                                    height: 25
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 39
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 40
-                                    }
-                                },
-                                '健康沙龙'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 42
-                                }
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 24
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5C45\u5BB6\u966A\u62A4",
+                            url: _require(_dependencyMap[8], '../../../assets/images/home_peihucopy.png'),
+                            imageStyle: {
+                                width: 27,
+                                height: 24
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[10], '../../../assets/images/zixunguanli.png'),
-                                style: {
-                                    width: 25,
-                                    height: 23
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 43
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 44
-                                    }
-                                },
-                                '在线咨询'
-                            )
-                        ),
-                        _react3.default.createElement(
-                            _reactNative.TouchableOpacity,
-                            {
-                                style: [styles.center, styles.btn],
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 46
-                                }
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
                             },
-                            _react3.default.createElement(_reactNative.Image, {
-                                source: _require(_dependencyMap[11], '../../../assets/images/挂号.png'),
-                                style: {
-                                    width: 21,
-                                    height: 24
-                                },
-                                __source: {
-                                    fileName: _jsxFileName,
-                                    lineNumber: 47
-                                }
-                            }),
-                            _react3.default.createElement(
-                                _reactNative.Text,
-                                {
-                                    style: styles.btnTitle,
-                                    __source: {
-                                        fileName: _jsxFileName,
-                                        lineNumber: 48
-                                    }
-                                },
-                                '预约加号'
-                            )
-                        )
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 27
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u4E13\u5BB6\u8BB2\u5EA7",
+                            url: _require(_dependencyMap[9], '../../../assets/images/Shape.png'),
+                            imageStyle: {
+                                width: 15,
+                                height: 25
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 30
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5065\u5EB7\u6C99\u9F99",
+                            url: _require(_dependencyMap[10], '../../../assets/images/咖啡.png'),
+                            imageStyle: {
+                                width: 24,
+                                height: 25
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 33
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u5728\u7EBF\u54A8\u8BE2",
+                            url: _require(_dependencyMap[11], '../../../assets/images/zixunguanli.png'),
+                            imageStyle: {
+                                width: 25,
+                                height: 23
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 36
+                            }
+                        }),
+                        _react3.default.createElement(_ImageButton2.default, {
+                            title: "\u9884\u7EA6\u52A0\u53F7",
+                            url: _require(_dependencyMap[12], '../../../assets/images/挂号.png'),
+                            imageStyle: {
+                                width: 21,
+                                height: 24
+                            },
+                            titleStyle: styles.btnTitle,
+                            btnStyle: {
+                                width: btnWidth,
+                                height: 77
+                            },
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 39
+                            }
+                        })
                     )
                 );
             }
@@ -80122,7 +80031,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             marginTop: 14
         }
     });
-},616,[118,130,12,287,617,618,619,620,621,622,623,624],"src/screens/Mine/components/FunctionCell.js");
+},616,[118,130,12,635,287,617,618,619,620,621,622,623,624],"src/screens/Mine/components/FunctionCell.js");
 __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -80220,6 +80129,333 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   });
 },624,[326],"src/assets/images/挂号@2x.png");
 __d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _react2 = _require(_dependencyMap[0], "react");
+
+    var _react3 = _interopRequireDefault(_react2);
+
+    var _index = _require(_dependencyMap[1], "./../../../../node_modules/react-transform-hmr/lib/index.js");
+
+    var _index2 = _interopRequireDefault(_index);
+
+    var _jsxFileName = "/Users/letong/Desktop/RN/HB_RN/src/screens/Mine/components/SystemCell.js";
+
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+    var _reactNative = _require(_dependencyMap[2], "react-native");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    var _components = {
+        SystemCell: {
+            displayName: "SystemCell"
+        }
+    };
+
+    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+        filename: "/Users/letong/Desktop/RN/HB_RN/src/screens/Mine/components/SystemCell.js",
+        components: _components,
+        locals: [module],
+        imports: [_react3.default]
+    });
+
+    function _wrapComponent(id) {
+        return function (Component) {
+            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+        };
+    }
+
+    var SystemCell = _wrapComponent("SystemCell")(function (_Component) {
+        _inherits(SystemCell, _Component);
+
+        function SystemCell() {
+            _classCallCheck(this, SystemCell);
+
+            return _possibleConstructorReturn(this, (SystemCell.__proto__ || Object.getPrototypeOf(SystemCell)).apply(this, arguments));
+        }
+
+        _createClass(SystemCell, [{
+            key: "render",
+            value: function render() {
+                return _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                        style: styles.container,
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 7
+                        }
+                    },
+                    _react3.default.createElement(
+                        _reactNative.TouchableOpacity,
+                        {
+                            style: styles.btn,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 8
+                            }
+                        },
+                        _react3.default.createElement(
+                            _reactNative.View,
+                            {
+                                style: styles.titleView,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 9
+                                }
+                            },
+                            _react3.default.createElement(
+                                _reactNative.Text,
+                                {
+                                    style: styles.title,
+                                    __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 10
+                                    }
+                                },
+                                '意见反馈'
+                            )
+                        ),
+                        _react3.default.createElement(
+                            _reactNative.View,
+                            {
+                                style: styles.imageView,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 12
+                                }
+                            },
+                            _react3.default.createElement(_reactNative.Image, {
+                                source: _require(_dependencyMap[3], '../../../assets/images/white_into.png'),
+                                style: styles.image,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 13
+                                }
+                            })
+                        )
+                    ),
+                    _react3.default.createElement(_reactNative.View, {
+                        style: {
+                            backgroundColor: '#E5E5E5',
+                            height: 1,
+                            marginLeft: 15,
+                            marginRight: 15
+                        },
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 16
+                        }
+                    }),
+                    _react3.default.createElement(
+                        _reactNative.TouchableOpacity,
+                        {
+                            style: styles.btn,
+                            __source: {
+                                fileName: _jsxFileName,
+                                lineNumber: 17
+                            }
+                        },
+                        _react3.default.createElement(
+                            _reactNative.View,
+                            {
+                                style: styles.titleView,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 18
+                                }
+                            },
+                            _react3.default.createElement(
+                                _reactNative.Text,
+                                {
+                                    style: styles.title,
+                                    __source: {
+                                        fileName: _jsxFileName,
+                                        lineNumber: 19
+                                    }
+                                },
+                                '分享 惠宾健康通'
+                            )
+                        ),
+                        _react3.default.createElement(
+                            _reactNative.View,
+                            {
+                                style: styles.imageView,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 21
+                                }
+                            },
+                            _react3.default.createElement(_reactNative.Image, {
+                                source: _require(_dependencyMap[3], '../../../assets/images/white_into.png'),
+                                style: styles.image,
+                                __source: {
+                                    fileName: _jsxFileName,
+                                    lineNumber: 22
+                                }
+                            })
+                        )
+                    )
+                );
+            }
+        }]);
+
+        return SystemCell;
+    }(_react2.Component));
+
+    exports.default = SystemCell;
+
+    var styles = _reactNative.StyleSheet.create({
+        container: {
+            marginTop: 15,
+            backgroundColor: '#ffffff',
+            borderRadius: 4,
+            marginLeft: 15,
+            marginRight: 15,
+            height: 91
+        },
+        btn: {
+            height: 45,
+            flexDirection: 'row',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            marginLeft: 15
+        },
+        titleView: {
+            flex: 2
+        },
+        title: {
+            fontSize: 15,
+            color: '#333333',
+            textAlign: 'left'
+        },
+        imageView: {
+            flex: 2,
+            flexDirection: 'row',
+            justifyContent: 'flex-end',
+            alignItems: 'center',
+            marginRight: 15
+        },
+        image: {
+            width: 6,
+            height: 11
+        }
+    });
+},632,[118,130,12,611],"src/screens/Mine/components/SystemCell.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+
+    var _react2 = _require(_dependencyMap[0], "react");
+
+    var _react3 = _interopRequireDefault(_react2);
+
+    var _index = _require(_dependencyMap[1], "./../../../node_modules/react-transform-hmr/lib/index.js");
+
+    var _index2 = _interopRequireDefault(_index);
+
+    var _jsxFileName = "/Users/letong/Desktop/RN/HB_RN/src/screens/Component/Logo.js";
+
+    var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+    var _reactNative = _require(_dependencyMap[2], "react-native");
+
+    function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    var _components = {
+        Logo: {
+            displayName: "Logo"
+        }
+    };
+
+    var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+        filename: "/Users/letong/Desktop/RN/HB_RN/src/screens/Component/Logo.js",
+        components: _components,
+        locals: [module],
+        imports: [_react3.default]
+    });
+
+    function _wrapComponent(id) {
+        return function (Component) {
+            return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+        };
+    }
+
+    var Logo = _wrapComponent("Logo")(function (_Component) {
+        _inherits(Logo, _Component);
+
+        function Logo() {
+            _classCallCheck(this, Logo);
+
+            return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
+        }
+
+        _createClass(Logo, [{
+            key: "render",
+            value: function render() {
+                return _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                        style: {
+                            height: 83,
+                            alignItems: 'center',
+                            backgroundColor: 'transparent'
+                        },
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 7
+                        }
+                    },
+                    _react3.default.createElement(_reactNative.Image, {
+                        source: _require(_dependencyMap[3], '../../assets/images/slgcopy.png'),
+                        style: {
+                            width: 141,
+                            height: 24.5,
+                            marginTop: 20
+                        },
+                        __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 8
+                        }
+                    })
+                );
+            }
+        }]);
+
+        return Logo;
+    }(_react2.Component));
+
+    exports.default = Logo;
+},633,[118,130,12,634],"src/screens/Component/Logo.js");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/src/assets/images",
+    "width": 141,
+    "height": 24.5,
+    "scales": [2, 3],
+    "hash": "e88cdda6d044bc90f9c806542154db95",
+    "name": "slgcopy",
+    "type": "png"
+  });
+},634,[326],"src/assets/images/slgcopy@2x.png");
+__d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
     "httpServerLocation": "/assets/src/assets/images",
@@ -80291,6 +80527,42 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     "type": "png"
   });
 },630,[326],"src/assets/images/gray_user@2x.png");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/src/assets/images",
+    "width": 24,
+    "height": 21.5,
+    "scales": [2, 3],
+    "hash": "c0c617b1057118fa974ebb754b0c5bef",
+    "name": "Group10Copy",
+    "type": "png"
+  });
+},613,[326],"src/assets/images/Group10Copy@2x.png");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/src/assets/images",
+    "width": 21,
+    "height": 20.5,
+    "scales": [2, 3],
+    "hash": "08bc9b5b2b06da33efda9fa518d44c2e",
+    "name": "newscopy",
+    "type": "png"
+  });
+},614,[326],"src/assets/images/newscopy@2x.png");
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/src/assets/images",
+    "width": 23,
+    "height": 23,
+    "scales": [2, 3],
+    "hash": "43de8993567eb735e6be3dad00e4f347",
+    "name": "rotatecopy",
+    "type": "png"
+  });
+},615,[326],"src/assets/images/rotatecopy@2x.png");
 require(52);
 require(11);
 //# sourceMappingURL=index.map

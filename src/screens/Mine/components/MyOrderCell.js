@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image,View,TouchableOpacity,Text ,StyleSheet} from 'react-native';
+import ImageButton from '../../Component/ImageButton'
 
 export default class NyOrderCell extends Component{
     render(){
@@ -16,22 +17,18 @@ export default class NyOrderCell extends Component{
                 </View>
                 <View style={styles.line}></View>
                 <View style={styles.functionView}>
-                    <TouchableOpacity style={[styles.center,{flex:4}]}>
-                        <Image source={require('../../../assets/images/Group17Copy.png')} style={{width:25,height:19}}/>
-                        <Text style={styles.btnTitle}>{'待付款'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,{flex:4}]}>
-                        <Image source={require('../../../assets/images/Group10Copy.png')} style={{width:24,height:22}}/>
-                        <Text style={styles.btnTitle}>{'待赴约'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,{flex:4}]}>
-                        <Image source={require('../../../assets/images/newscopy.png')} style={{width:21,height:21}}/>
-                        <Text style={styles.btnTitle}>{'待评价'}</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.center,{flex:4}]}>
-                        <Image source={require('../../../assets/images/rotatecopy.png')} style={{width:23,height:23}}/>
-                        <Text style={styles.btnTitle}>{'退款/取消'}</Text>
-                    </TouchableOpacity>
+                    <ImageButton    title='待付款' url={require('../../../assets/images/Group17Copy.png')} 
+                                    imageStyle={{width:25,height:19}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{flex:4}}/>
+                    <ImageButton    title='待赴约' url={require('../../../assets/images/Group10Copy.png')} 
+                                    imageStyle={{width:24,height:22}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{flex:4}}/>
+                    <ImageButton    title='待评价' url={require('../../../assets/images/newscopy.png')} 
+                                    imageStyle={{width:21,height:21}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{flex:4}}/>
+                    <ImageButton    title='退款/取消' url={require('../../../assets/images/rotatecopy.png')} 
+                                    imageStyle={{width:23,height:23}} titleStyle={styles.btnTitle} 
+                                    btnStyle={{flex:4}}/>
                 </View> 
             </View>
         );
